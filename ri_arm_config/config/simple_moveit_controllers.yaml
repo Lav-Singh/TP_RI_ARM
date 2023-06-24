@@ -1,0 +1,10 @@
+controller_list:
+  - name: ri_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - base_to_first
+      - first_to_second_pivot
+      - second_to_third_pivot
+      - third_to_effector_pivot
